@@ -1,6 +1,6 @@
 <?php
 /**
- * @version		$Id: item.php 18162 2010-07-16 07:00:47Z ian $
+ * @version		$Id: item.php 14401 2010-01-26 14:10:00Z louis $
  * @package		Joomla
  * @subpackage	Menus
  * @copyright	Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
@@ -92,8 +92,8 @@ class MenusModelItem extends JModel
 		}
 
 		// Override the current item's menutype field if defined in the request
-		if ($menutype = JRequest::getVar('menutype', '', '', 'menutype')) {
-			$table->menutype = $menutype;
+		if ($menu_type = JRequest::getString('menutype')) {
+			$table->menutype = $menu_type;
 		}
 
 		switch ($table->type)
@@ -144,7 +144,7 @@ class MenusModelItem extends JModel
 	{
 		$item				= &$this->getItem();
 		$return['option']	= JRequest::getCmd('expand');
-		$menutype			= JRequest::getVar('menutype', '', '', 'menutype');
+		$menutype			= JRequest::getString('menutype');
 
 		if ($return['option'])
 		{

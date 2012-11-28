@@ -1,6 +1,6 @@
 <?php
 /**
-* @version		$Id: admin.messages.php 19343 2010-11-03 18:12:02Z ian $
+* @version		$Id: admin.messages.php 17299 2010-05-27 16:06:54Z ian $
 * @package		Joomla
 * @subpackage	Messages
 * @copyright	Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
@@ -79,14 +79,6 @@ function showMessages( $option )
 	}
 	$search = JString::strtolower($search);
 
-	if (!in_array($filter_order, array('a.date_time', 'a.state', 'a.subject', 'user_from'))) {
-		$filter_order = 'a.date_time';
-	}
-
-	if (!in_array(strtoupper($filter_order_Dir), array('ASC', 'DESC'))) {
-		$filter_order_Dir = 'DESC';
-	}
-
 	$where = array();
 	$where[] = ' a.user_id_to='.(int) $user->get('id');
 
@@ -103,7 +95,6 @@ function showMessages( $option )
 	}
 
 	$where 		= ( count( $where ) ? ' WHERE ' . implode( ' AND ', $where ) : '' );
-
 	$orderby 	= ' ORDER BY '. $filter_order .' '. $filter_order_Dir .', a.date_time DESC';
 
 	$query = 'SELECT COUNT(*)'

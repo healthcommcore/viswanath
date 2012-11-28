@@ -1,6 +1,6 @@
 <?php
 /**
- * @version		$Id: list.php 19343 2010-11-03 18:12:02Z ian $
+ * @version		$Id: list.php 17299 2010-05-27 16:06:54Z ian $
  * @package		Joomla
  * @subpackage	Menus
  * @copyright	Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
@@ -53,7 +53,7 @@ class MenusModelList extends JModel
 
 		$db =& $this->getDBO();
 
-		$menutype			= $mainframe->getUserStateFromRequest( 'com_menus.menutype',						'menutype',			'mainmenu',		'menutype' );
+		$menutype			= $mainframe->getUserStateFromRequest( "com_menus.menutype",						'menutype',			'mainmenu',		'string' );
 		$filter_order		= $mainframe->getUserStateFromRequest( 'com_menus.'.$menutype.'.filter_order',		'filter_order',		'm.ordering',	'cmd' );
 		$filter_order_Dir	= $mainframe->getUserStateFromRequest( 'com_menus.'.$menutype.'.filter_order_Dir',	'filter_order_Dir',	'ASC',			'word' );
 		$filter_state		= $mainframe->getUserStateFromRequest( 'com_menus.'.$menutype.'.filter_state',		'filter_state',		'',				'word' );
@@ -74,15 +74,6 @@ class MenusModelList extends JModel
 			} else if ($filter_state == 'U' ) {
 				$and = ' AND m.published = 0';
 			}
-		}
-
-		// ensure $filter_order has a good value
-		if (!in_array($filter_order, array('m.name', 'm.published', 'm.ordering', 'groupname', 'm.type', 'm.id'))) {
-			$filter_order = 'm.ordering';
-		}
-
-		if (!in_array(strtoupper($filter_order_Dir), array('ASC', 'DESC', ''))) {
-			$filter_order_Dir = 'ASC';
 		}
 
 		// just in case filter_order get's messed up

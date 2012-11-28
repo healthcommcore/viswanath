@@ -1,6 +1,6 @@
 <?php
 /**
-* @version		$Id: application.php 21074 2011-04-04 16:51:40Z dextercowley $
+* @version		$Id: application.php 16449 2010-04-25 21:17:31Z ian $
 * @package		Joomla.Framework
 * @subpackage	Application
 * @copyright	Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
@@ -14,8 +14,6 @@
 
 // Check to ensure this file is within the rest of the framework
 defined('JPATH_BASE') or die();
-
-jimport('joomla.event.dispatcher');
 
 /**
 * Base class for a Joomla! application.

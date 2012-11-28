@@ -1,6 +1,6 @@
 <?php
 /**
-* @version		$Id: view.html.php 19343 2010-11-03 18:12:02Z ian $
+* @version		$Id: view.html.php 17299 2010-05-27 16:06:54Z ian $
 * @package		Joomla
 * @subpackage	Config
 * @copyright	Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
@@ -73,21 +73,12 @@ class PluginsViewPlugins extends JView
 		}
 
 		$where 		= ( count( $where ) ? ' WHERE ' . implode( ' AND ', $where ) : '' );
-
-		// sanitize $filter_order
-		if (!in_array($filter_order, array('p.name', 'p.published', 'p.ordering', 'groupname', 'p.folder', 'p.element', 'p.id'))) {
-			$filter_order = 'p.folder';
-		}
-
-		if (!in_array(strtoupper($filter_order_Dir), array('ASC', 'DESC'))) {
-			$filter_order_Dir = '';
-		}
-
 		if ($filter_order == 'p.ordering') {
 			$orderby = ' ORDER BY p.folder, p.ordering '. $filter_order_Dir;
 		} else {
 			$orderby = ' ORDER BY '. $filter_order .' '. $filter_order_Dir .', p.ordering ASC';
 		}
+
 
 		// get the total number of records
 		$query = 'SELECT COUNT(*)'

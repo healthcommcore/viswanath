@@ -6,7 +6,7 @@ class JConfig {
 	var $helpurl = 'http://help.joomla.org';
 	var $debug = '0';
 	var $debug_lang = '0';
-	var $sef = '1';
+	var $sef = '0';
 	var $sef_rewrite = '0';
 	var $sef_suffix = '0';
 	var $feed_limit = '10';
@@ -15,8 +15,8 @@ class JConfig {
 	var $gzip = '0';
 	var $error_reporting = '-1';
 	var $xmlrpc_server = '0';
-	var $log_path = '/var/www/viswanathlab.org/logs';
-	var $tmp_path = '/var/www/viswanathlab.org/tmp';
+	var $log_path = '/Library/WebServer/Documents/live_sites/viswanath_lab/logs';
+	var $tmp_path = '/Library/WebServer/Documents/live_sites/viswanath_lab/tmp';
 	var $live_site = '';
 	var $force_ssl = '0';
 	var $offset = '-5';
@@ -36,7 +36,7 @@ class JConfig {
 	var $db = 'vlab';
 	var $dbprefix = 'jos_';
 	var $mailer = 'mail';
-	var $mailfrom = 'health_communication@dfci.harvard.edu';
+	var $mailfrom = 'brad_kaiser@dfci.harvard.edu';
 	var $fromname = 'Viswanath Lab';
 	var $sendmail = '/usr/sbin/sendmail';
 	var $smtpauth = '0';
@@ -51,9 +51,8 @@ class JConfig {
 	var $session_handler = 'database';
 	var $password = 'vlabplease';
 	var $sitename = 'Viswanath Lab';
-	var $MetaDesc = 'This web site is a resource for researchers, students, and practitioners interested in health communication, particularly as it relates to health disparities.';
-	var $MetaKeys = '19th monograph of the NCI\'s Tobacco Control Series,Cancer communications,Center for Community Based Research,Click to Connect,Communication,Communication inequalities,Communication internship,Communication science,Communications Laboratory,Community-based participatory research,Dana-Farber Cancer Institute,Dana-Farber/Harvard Cancer Center,Digital divide,Digital Inequalities,ECHO Lab,eHealth,Emergency preparedness,Enhancing Communications for Health Outcomes Laboratory,Harvard School of Public Health,Health,Health Behavior and Health Education: Theory, Research and Practice,Health Communication,Health Communications Core,Health Disparities,Health information,Health Journalists,Health Literacy,Inequalities,Information seeking,K. Viswanath,
-Knowledge networks,Knowledge translation,Mass media,Mass Media, Social Control, and Social Change: A Macrosocial Perspective,MassCONECT,PLANET MassCONECT,Public Health,Public Health Campaigns,Risk communication,Social capital,Social networking,The International Encyclopedia of Communication,Tobacco Research,TReND,Usability testing,Vish Viswanath,Viswanath Lab,Web based interventions';
+	var $MetaDesc = 'Joomla! - the dynamic portal engine and content management system';
+	var $MetaKeys = 'joomla, Joomla';
 	var $offline_message = 'This site is down for maintenance. Please check back again soon.';
 }
 ?>

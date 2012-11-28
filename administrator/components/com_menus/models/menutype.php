@@ -1,6 +1,6 @@
 <?php
 /**
- * @version		$Id: menutype.php 18162 2010-07-16 07:00:47Z ian $
+ * @version		$Id: menutype.php 14401 2010-01-26 14:10:00Z louis $
  * @package		Joomla
  * @subpackage	Menus
  * @copyright	Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
@@ -146,7 +146,7 @@ class MenusModelMenutype extends JModel
 	{
 		$table = & $this->getTable();
 		if ($table->menutype == '') {
-			$table->menutype = JRequest::getVar('menutype', '', '', 'menutype');
+			$table->menutype = JRequest::getString('menutype');
 		}
 
 		$db = &$this->getDBO();

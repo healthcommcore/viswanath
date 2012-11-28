@@ -1,6 +1,6 @@
 <?php
 /**
- * @version		$Id: banner.php 19343 2010-11-03 18:12:02Z ian $
+ * @version		$Id: banner.php 17299 2010-05-27 16:06:54Z ian $
  * @package		Joomla
  * @subpackage	Banners
  * @copyright	Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
@@ -78,16 +78,6 @@ class BannerControllerBanner extends JController
 		}
 
 		$where		= count( $where ) ? ' WHERE ' . implode( ' AND ', $where ) : '';
-
-		// sanitize $filter_order
-		if (!in_array($filter_order, array('b.name', 'c.name', 'cc.title', 'b.showBanner', 'b.ordering', 'b.Sticky', 'b.impmade', 'b.clicks', 'b.bid'))) {
-			$filter_order = 'cc.title';
-		}
-
-		if (!in_array(strtoupper($filter_order_Dir), array('ASC', 'DESC'))) {
-			$filter_order_Dir = '';
-		}
-
 		$orderby	= ' ORDER BY '. $filter_order .' '. $filter_order_Dir .', b.ordering';
 
 		// get the total number of records

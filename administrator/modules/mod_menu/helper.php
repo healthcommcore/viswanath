@@ -94,14 +94,7 @@ class modMenuHelper
 		 */
 		if (count($menuTypes)) {
 			foreach ($menuTypes as $menuType) {
-				$menu->addChild(
-					new JMenuNode(
-						$menuType->title . ($menuType->home ? ' *' : ''), 
-						'index.php?option=com_menus&task=view&menutype='
-						. $menuType->menutype,
-						'class:menu'
-					)
-				);
+				$menu->addChild(new JMenuNode($menuType->title.($menuType->home ? ' *' : ''), 'index.php?option=com_menus&task=view&menutype='.$menuType->menutype, 'class:menu'));
 			}
 		}
 

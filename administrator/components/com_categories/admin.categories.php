@@ -1,6 +1,6 @@
 <?php
 /**
- * @version		$Id: admin.categories.php 19343 2010-11-03 18:12:02Z ian $
+ * @version		$Id: admin.categories.php 17299 2010-05-27 16:06:54Z ian $
  * @package		Joomla
  * @subpackage	Categories
  * @copyright	Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
@@ -128,20 +128,6 @@ function showCategories( $section, $option )
 	$section_name 	= '';
 	$content_add 	= '';
 	$content_join 	= '';
-
-	// ensure we have a good value for $filter_order
-	if (!in_array($filter_order, array('c.title', 'c.published', 'c.ordering', 'groupname', 'section_name', 'c.id'))) {
-		$filter_order = 'c.ordering';
-	}
-
-	if (!in_array(strtoupper($filter_order_Dir), array('ASC', 'DESC'))) {
-		$filter_order_Dir = '';
-	}
-
-	if (intval($section) <= 0 && $section != 'com_content' && $filter_order == 'section_name') {
-		$filter_order = 'c.ordering';
-	}
-
 	$order 			= ' ORDER BY '. $filter_order .' '. $filter_order_Dir .', c.ordering';
 	if (intval( $section ) > 0) {
 		$table = 'content';
@@ -207,7 +193,6 @@ function showCategories( $section, $option )
 		$content_add 	= ' , z.title AS section_name';
 		$content_join 	= ' LEFT JOIN #__sections AS z ON z.id = c.section';
 		$where 			= ' WHERE c.section NOT LIKE "%com_%"';
-
 		if ($filter_order == 'c.ordering'){
 			$order 			= ' ORDER BY  z.title, c.ordering '. $filter_order_Dir;
 		} else {
@@ -439,7 +424,7 @@ function saveCategory()
 
 	// Initialize variables
 	$db		 =& JFactory::getDBO();
-	$menu 		= JRequest::getVar( 'menu', 'mainmenu', 'post', 'menutype' );
+	$menu 		= JRequest::getCmd( 'menu', 'mainmenu', 'post' );
 	$menuid		= JRequest::getVar( 'menuid', 0, 'post', 'int' );
 	$redirect 	= JRequest::getCmd( 'redirect', '', 'post' );
 	$oldtitle 	= JRequest::getString( 'oldtitle', '', 'post' );
@@ -504,14 +489,11 @@ function saveCategory()
 	switch ( JRequest::getCmd('task') )
 	{
 		case 'go2menu':
-			$mainframe->redirect('index.php?option=com_menus&menutype=' . $menu);
+			$mainframe->redirect( 'index.php?option=com_menus&menutype='. $menu );
 			break;
 
 		case 'go2menuitem':
-			$mainframe->redirect(
-				'index.php?option=com_menus&menutype=' . $menu 
-				. '&task=edit&id='. $menuid 
-			);
+			$mainframe->redirect( 'index.php?option=com_menus&menutype='. $menu .'&task=edit&id='. $menuid );
 			break;
 
 		case 'apply':

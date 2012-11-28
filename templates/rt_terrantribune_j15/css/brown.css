@@ -4,6 +4,7 @@ body.bc-brown {
 	border-top: 4px solid #663333;/* #7F5124; */
 }
 
+.bc-brown .contentheading,
 .bc-brown .componentheading,
 .bc-brown #main-section a,
 .bc-brown .moduletable h3,
@@ -16,8 +17,6 @@ body.bc-brown {
 .bc-brown #sub-menu a{
 	color: #996600;
 }
-
-.bc-brown .contentheading {color:#8d2b37;}
 
 .bc-brown img#logo {
 	background: url(../images/brown/logo.png) 0 0 no-repeat;
@@ -68,6 +67,3 @@ body.bc-brown {
 	border-top: 5px solid #996600;
 	color: #DDC2A9;
 }
-
-.pagenavbar{border:#996600 1px solid; background:#fff1d6;padding:6px; float:right; text-align:center;}
-.pagenav{padding:0 2px;}

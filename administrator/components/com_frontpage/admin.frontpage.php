@@ -1,6 +1,6 @@
 <?php
 /**
-* @version		$Id: admin.frontpage.php 19343 2010-11-03 18:12:02Z ian $
+* @version		$Id: admin.frontpage.php 17299 2010-05-27 16:06:54Z ian $
 * @package		Joomla
 * @subpackage	Content
 * @copyright	Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
@@ -135,16 +135,6 @@ function viewFrontPage( $option )
 	}
 
 	$where 		= ( count( $where ) ? ' WHERE ' . implode( ' AND ', $where ) : '' );
-
-	// ensure we have a good vale for $filter_order
-	if (!in_array($filter_order, array('c.title', 'c.state', 'fpordering', 'groupname', 'c.id', 'sect_name', 'cc.name', 'author', 'cc.title'))) {
-		$filter_order = 'fpordering';
-	}
-
-	if (!in_array(strtoupper($filter_order_Dir), array('ASC', 'DESC'))) {
-		$filter_order_Dir = '';
-	}
-
 	$orderby 	= ' ORDER BY '. $filter_order .' '. $filter_order_Dir .', fpordering';
 
 	// get the total number of records

@@ -24,14 +24,14 @@ function insertTable() {
 	border = formObj.elements['border'].value != "" ? formObj.elements['border'].value  : 0;
 	cellpadding = formObj.elements['cellpadding'].value != "" ? formObj.elements['cellpadding'].value : "";
 	cellspacing = formObj.elements['cellspacing'].value != "" ? formObj.elements['cellspacing'].value : "";
-	align = getSelectValue(formObj, "align");
-	frame = getSelectValue(formObj, "tframe");
-	rules = getSelectValue(formObj, "rules");
+	align = formObj.elements['align'].options[formObj.elements['align'].selectedIndex].value;
+	frame = formObj.elements['frame'].options[formObj.elements['frame'].selectedIndex].value;
+	rules = formObj.elements['rules'].options[formObj.elements['rules'].selectedIndex].value;
 	width = formObj.elements['width'].value;
 	height = formObj.elements['height'].value;
 	bordercolor = formObj.elements['bordercolor'].value;
 	bgcolor = formObj.elements['bgcolor'].value;
-	className = getSelectValue(formObj, "class");
+	className = formObj.elements['class'].options[formObj.elements['class'].selectedIndex].value;
 	id = formObj.elements['id'].value;
 	summary = formObj.elements['summary'].value;
 	style = formObj.elements['style'].value;
@@ -322,7 +322,7 @@ function init() {
 
 	// Update form
 	selectByValue(formObj, 'align', align);
-	selectByValue(formObj, 'tframe', frame);
+	selectByValue(formObj, 'frame', frame);
 	selectByValue(formObj, 'rules', rules);
 	selectByValue(formObj, 'class', className, true, true);
 	formObj.cols.value = cols;

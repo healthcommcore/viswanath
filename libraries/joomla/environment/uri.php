@@ -1,6 +1,6 @@
 <?php
 /**
- * @version		$Id: uri.php 21079 2011-04-04 20:54:40Z dextercowley $
+ * @version		$Id: uri.php 16382 2010-04-23 09:33:59Z ian $
  * @package		Joomla.Framework
  * @subpackage	Environment
  * @copyright	Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
@@ -175,24 +175,7 @@ class JURI extends JObject
 				}
 
 				// Now we need to clean what we got since we can't trust the server var
-				// Need to check that the URI is fully decoded in case of multiple-encoded attack vectors.
-				$halt	= 0;
-				while (true)
-				{
-					$last	= $theURI;
-					$theURI = urldecode($theURI);
-
-					// Check whether the last decode is equal to the first.
-					if ($theURI == $last) {
-						// Break out of the while if the URI is stable.
-						break;
-					}
-					else if (++$halt > 10) {
-						// Runaway check. URI has been seriously compromised.
-						jexit();
-					}
-				}
-
+				$theURI = urldecode($theURI);
 				$theURI = str_replace('"', '&quot;',$theURI);
 				$theURI = str_replace('<', '&lt;',$theURI);
 				$theURI = str_replace('>', '&gt;',$theURI);
@@ -240,15 +223,11 @@ class JURI extends JObject
 				$uri	         =& JURI::getInstance();
 				$base['prefix'] = $uri->toString( array('scheme', 'host', 'port'));
 
-				if (strpos(php_sapi_name(), 'cgi') !== false && !empty($_SERVER['REQUEST_URI']) &&
-				    (!ini_get('cgi.fix_pathinfo') || version_compare(PHP_VERSION, '5.2.4', '<'))) {
-					// CGI on PHP pre-5.2.4 with cgi.fix_pathinfo = 0.
-
-					// In pre-rev. 240885 of main_cgi.c, SCRIPT_NAME doesn't conform the PHP spec.,
-					// therefore we use PHP_SELF instead.
+				if (strpos(php_sapi_name(), 'cgi') !== false && !empty($_SERVER['REQUEST_URI'])) {
+					//Apache CGI
 					$base['path'] =  rtrim(dirname(str_replace(array('"', '<', '>', "'"), '', $_SERVER["PHP_SELF"])), '/\\');
 				} else {
-					// Since PHP 5.2.4 we can trust SCRIPT_NAME;  it conforms the spec.
+					//Others
 					$base['path'] =  rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
 				}
 			}
