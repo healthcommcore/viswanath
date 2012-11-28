@@ -1,0 +1,50 @@
+/* CSS Document */
+#navlist
+{
+	padding: 4px 0;
+	margin-left: 0;
+	margin-top:10px;
+	border-bottom: 1px solid #CCCCCC;
+	font: 11px Verdana, sans-serif;
+}
+
+#navlist li a
+{
+	padding: 3px 0.5em;
+	margin-left: 3px;
+	border-bottom: 1px none #CCCCCC;
+	text-decoration: none;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	vertical-align:middle;
+	font-size: 100%;
+}
+
+#navlist  a 
+{
+	padding: 3px 0.5em;
+	margin:0;
+}
+
+
+div.moduletable_menu li a:hover 
+{
+	color: #FFFFFF;
+	background: #CC9933;
+	/* border-color: #CCCCCC;*/
+	display: block;
+	margin:0 0 0 -10px;
+
+	padding: 0px 0 0px 10px;
+	
+	text-decoration:none;
+}
+
+div.moduletable_menu li#current a 
+{
+	color: #996600;
+	background-color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}

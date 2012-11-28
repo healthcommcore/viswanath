@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.0.0">
+	<name>Ad</name>
+	<author>Therese Lung (HCC)</author>
+	<creationDate>April 2008</creationDate>
+	<copyright>Copyright (C) 2008 DFCI.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>therse_lung@dfci.harvard.edu</authorEmail>
+	<authorUrl>www.dfci.org</authorUrl>
+	<version>1.0</version>
+	<description>Bio component</description>
+</install>

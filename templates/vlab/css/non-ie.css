@@ -1,0 +1,9 @@
+/* CSS Document */
+
+span.article_separator {
+	padding:0;
+	margin:0;
+	border:none;
+	height:0;
+	display:none;
+}

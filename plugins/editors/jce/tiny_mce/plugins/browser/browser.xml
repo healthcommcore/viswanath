@@ -1,0 +1,138 @@
+<?xml version="1.0" ?>
+<install version="1.5.0" type="plugin" plugin="browser">
+	<name>Browser</name>
+	<version>1.5.0</version>
+	<creationDate>28 February 2008</creationDate>
+	<author>Ryan Demmer</author>
+	<authorEmail>ryandemmer@gmail.com</authorEmail>
+	<authorUrl>http://www.cellardoor.za.net/</authorUrl>
+	<copyright>Ryan Demmer</copyright>
+	<license>GPL</license>
+	<description><![CDATA[ 
+	<p>Browser 1.5.0</p>
+	<p>Changelog (from 1.5.0 beta 1):
+	<ul>
+		<li>Added: Support for absolute urls</li>
+		<li>Added: Support for dynamic file path</li>
+		<li>Changed: User restriction methods</li>
+	</ul>
+	</p>
+	]]></description>
+	<icon></icon>
+	<layout></layout>
+	<elements></elements>
+	<files>
+		<filename>editor_plugin.js</filename>
+		<filename>browser.php</filename>
+		<filename>classes/index.html</filename>
+        <filename>classes/browser.php</filename>
+        <filename>css/index.html</filename>
+        <filename>css/browser.css</filename>
+        <filename>index.html</filename>
+        <filename>js/browser.js</filename>
+        <filename>js/index.html</filename>
+        <filename>langs/en_dlg.js</filename>
+        <filename>langs/index.html</filename>
+    </files>
+	<params>
+        <param name="dir" type="text" default="images/stories" label="MANAGER PARAM DIRECTORY" description="MANAGER PARAM DIRECTORY DESC"/>
+		<param name="max_size" type="text" default="1024" label="MANAGER PARAM UPLOAD SIZE" description="MANAGER PARAM UPLOAD SIZE DESC"/>
+	</params>
+	<params group="access">
+        <param name="upload" type="list" default="19" label="UPLOAD ACCESS" description="UPLOAD ACCESS DESC">
+            <option value="99">ACCESS DISABLED</option>
+            <option value="0">ACCESS GUEST</option>
+            <option value="18">ACCESS REGISTERED</option>
+            <option value="19">ACCESS AUTHOR</option>
+            <option value="20">ACCESS EDITOR</option>
+            <option value="21">ACCESS PUBLISHER</option>
+            <option value="23">ACCESS MANAGER</option>
+            <option value="24">ACCESS ADMINISTRATOR</option>
+            <option value="25">ACCESS SUPER ADMINISTRATOR</option>
+		</param>
+		<param name="folder_new" type="list" default="19" label="FOLDER CREATE ACCESS" description="FOLDER CREATE ACCESS DESC">
+            <option value="99">ACCESS DISABLED</option>
+            <option value="0">ACCESS GUEST</option>
+            <option value="18">ACCESS REGISTERED</option>
+            <option value="19">ACCESS AUTHOR</option>
+            <option value="20">ACCESS EDITOR</option>
+            <option value="21">ACCESS PUBLISHER</option>
+            <option value="23">ACCESS MANAGER</option>
+            <option value="24">ACCESS ADMINISTRATOR</option>
+            <option value="25">ACCESS SUPER ADMINISTRATOR</option>
+		</param>
+		<param name="folder_delete" type="list" default="19" label="FOLDER DELETE ACCESS" description="FOLDER DELETE ACCESS DESC">
+            <option value="99">ACCESS DISABLED</option>
+            <option value="0">ACCESS GUEST</option>
+            <option value="18">ACCESS REGISTERED</option>
+            <option value="19">ACCESS AUTHOR</option>
+            <option value="20">ACCESS EDITOR</option>
+            <option value="21">ACCESS PUBLISHER</option>
+            <option value="23">ACCESS MANAGER</option>
+            <option value="24">ACCESS ADMINISTRATOR</option>
+            <option value="25">ACCESS SUPER ADMINISTRATOR</option>
+		</param>
+		<param name="folder_rename" type="list" default="19" label="FOLDER RENAME ACCESS" description="FOLDER RENAME ACCESS DESC">
+            <option value="99">ACCESS DISABLED</option>
+            <option value="0">ACCESS GUEST</option>
+            <option value="18">ACCESS REGISTERED</option>
+            <option value="19">ACCESS AUTHOR</option>
+            <option value="20">ACCESS EDITOR</option>
+            <option value="21">ACCESS PUBLISHER</option>
+            <option value="23">ACCESS MANAGER</option>
+            <option value="24">ACCESS ADMINISTRATOR</option>
+            <option value="25">ACCESS SUPER ADMINISTRATOR</option>
+		</param>
+		<param name="file_delete" type="list" default="19" label="FILE DELETE ACCESS" description="FILE DELETE ACCESS DESC">
+            <option value="99">ACCESS DISABLED</option>
+            <option value="0">ACCESS GUEST</option>
+            <option value="18">ACCESS REGISTERED</option>
+            <option value="19">ACCESS AUTHOR</option>
+            <option value="20">ACCESS EDITOR</option>
+            <option value="21">ACCESS PUBLISHER</option>
+            <option value="23">ACCESS MANAGER</option>
+            <option value="24">ACCESS ADMINISTRATOR</option>
+            <option value="25">ACCESS SUPER ADMINISTRATOR</option>
+		</param>
+		<param name="file_rename" type="list" default="19" label="FILE RENAME ACCESS" description="FILE RENAME ACCESS DESC">
+            <option value="99">ACCESS DISABLED</option>
+            <option value="0">ACCESS GUEST</option>
+            <option value="18">ACCESS REGISTERED</option>
+            <option value="19">ACCESS AUTHOR</option>
+            <option value="20">ACCESS EDITOR</option>
+            <option value="21">ACCESS PUBLISHER</option>
+            <option value="23">ACCESS MANAGER</option>
+            <option value="24">ACCESS ADMINISTRATOR</option>
+            <option value="25">ACCESS SUPER ADMINISTRATOR</option>
+		</param>
+		<param name="file_move" type="list" default="19" label="FILE PASTE ACCESS" description="FILE PASTE ACCESS DESC">
+            <option value="99">ACCESS DISABLED</option>
+            <option value="0">ACCESS GUEST</option>
+            <option value="18">ACCESS REGISTERED</option>
+            <option value="19">ACCESS AUTHOR</option>
+            <option value="20">ACCESS EDITOR</option>
+            <option value="21">ACCESS PUBLISHER</option>
+            <option value="23">ACCESS MANAGER</option>
+            <option value="24">ACCESS ADMINISTRATOR</option>
+            <option value="25">ACCESS SUPER ADMINISTRATOR</option>
+		</param>
+		<param name="user_restriction_level" type="list" default="99" label="RESTRICTION ACCESS" description="RESTRICTION ACCESS DESC">
+			<option value="99">ACCESS DISABLED</option>
+            <option value="0">ACCESS GUEST</option>
+            <option value="18">ACCESS REGISTERED</option>
+            <option value="19">ACCESS AUTHOR</option>
+            <option value="20">ACCESS EDITOR</option>
+            <option value="21">ACCESS PUBLISHER</option>
+            <option value="23">ACCESS MANAGER</option>
+            <option value="24">ACCESS ADMINISTRATOR</option>
+            <option value="25">ACCESS SUPER ADMINISTRATOR</option>
+		</param>
+        <param name="user_restriction_path" type="text" default="" label="RESTRICTION PATH" description="RESTRICTION PATH DESC"/>
+	</params>
+	<languages></languages>
+	<help>
+		<topic key="browser.about" title="Help About" />
+		<topic key="browser.interface" title="Help Interface" />
+		<topic key="browser.insert" title="Help Insert" />
+	</help>
+</install>

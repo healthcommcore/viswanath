@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="template">
+    <name>Viswanath Lab</name>
+    <version>1.5.0</version>
+    <creationDate>03/28/07</creationDate>
+    <author>RocketTheme</author>
+    <authorEmail>support@rockettheme.com</authorEmail>
+    <authorUrl>http://www.dfci.org</authorUrl>
+    <copyright>Copyright 2008 - DFCI/HCC</copyright>
+    <license>Proprietary</license>
+    <description>Viswanath Lab
+    </description>
+		<positions>
+			<position>top</position>
+			<position>left</position>
+			<position>header</position>
+			<position>footer</position>
+		</positions>
+</install>
