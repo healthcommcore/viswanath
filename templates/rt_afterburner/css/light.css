@@ -266,7 +266,7 @@ div.custom_home_message p{margin:0;  font-size:1.5em; line-height:1.5em;}
 #colmask #home_content ul li.health_journ{margin:-27px 0 0 580px;width:180px;}
 #colmask #home_content ul li.info_seek{margin:-150px 0 0 682px;}
 #colmask #home_content ul li.knowledge_trans{margin:-275px 0 0 630px;}
-#home_bkgrd{background:url('../images/circles_lines') 0 0 no-repeat;width:773px; height:489px;}
+#home_bkgrd{background:url('../images/circles_lines.gif') 0 0 no-repeat;width:773px; height:489px;}
 
 /* search */
 div.search{padding:2em 0;}

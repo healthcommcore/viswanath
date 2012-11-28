@@ -13,9 +13,9 @@ class JConfig {
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
 	public $host = 'localhost';
-	public $user = 'new_viswanath';
-	public $password = '84jF!pWc4';
-	public $db = 'new_viswanath';
+	public $user = 'vlab';
+	public $password = 'vlabplease';
+	public $db = 'vlab_redesign';
 	public $dbprefix = 'qx2sn_';
 	public $live_site = '';
 	public $secret = 'GNBoY9E5zhtqGoWY';
