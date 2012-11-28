@@ -33,7 +33,7 @@ class JConfig {
 	var $dbtype = 'mysql';
 	var $host = 'localhost';
 	var $user = 'vlab';
-	var $db = 'vlab';
+	var $db = 'vlab_redesign';
 	var $dbprefix = 'jos_';
 	var $mailer = 'mail';
 	var $mailfrom = 'brad_kaiser@dfci.harvard.edu';
