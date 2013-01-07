@@ -53,8 +53,8 @@ class JConfig {
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
-	public $log_path = '/Library/WebServer/Documents/live_sites/new_viswanath/logs';
-	public $tmp_path = '/Library/WebServer/Documents/live_sites/new_viswanath/tmp';
+	public $log_path = '/var/www/html/viswanathlab.org/logs';
+	public $tmp_path = '/var/www/html/viswanathlab.org/tmp';
 	public $lifetime = '120';
 	public $session_handler = 'database';
 	public $MetaRights = '';
