@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+	<extension method="upgrade" version="1.6" type="plugin" group="content">
+	<name>Article PXFont Size</name>
+	<author>karmany</author>
+	<creationDate>August 27, 2012</creationDate>
+	<copyright>2012 by karmany (http://www.karmany.net)</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>karmanyy@gmail.com</authorEmail>
+	<authorUrl>www.karmany.net</authorUrl>
+	<version>2.2.1</version>
+	<description>TXT_DESCRIPTION</description>
+
+<files>
+<filename plugin="articlepxfontsize_j16">articlepxfontsize_j16.php</filename>
+<folder>articlepxfontsize_j16</folder>
+</files>
+<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_articlepxfontsize_j16.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_articlepxfontsize_j16.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_content_articlepxfontsize_j16.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_content_articlepxfontsize_j16.sys.ini</language>
+</languages>
+<config>
+  <fields name="params">
+	<fieldset name="basic">
+			<field name="leyenda" type="spacer" class="text" label="TITLE_PLUGIN" />
+			<field name="linea01" type="spacer" hr="true" />
+			<field name="leyenda01" type="spacer" class="text" label="LEYENDA01" />
+			<field name="activado" type="radio" default="1" label="LABEL_ACTIVADO" description="DESCRIPTION_ACTIVADO">
+				<option value="0">NO_TXT</option>
+				<option value="1">YES_TXT</option>
+			</field>
+			<field name="view_featured" type="radio" default="1" label="LABEL_FEATURED" description="DESCRIPTION_FEATURED">
+				<option value="0">NO_TXT</option>
+				<option value="1">YES_TXT</option>
+			</field>
+			<field name="view_categories" type="radio" default="0" label="LABEL_CATEGORIES" description="DESCRIPTION_CATEGORIES">
+				<option value="0">NO_TXT</option>
+				<option value="1">YES_TXT</option>
+			</field>
+			<field name="view_category" type="radio" default="0" label="LABEL_CATEGORY" description="DESCRIPTION_CATEGORY">
+				<option value="0">NO_TXT</option>
+				<option value="1">YES_TXT</option>
+			</field>
+	   	<field name="titulo" type="text" size="50" default="Tamaño letra:" label="LABEL_TXTTITULO" description="DESCRIPTION_TXTTITULO" />
+	   	<field name="leyenda010" type="spacer" class="text" label="LEYENDA010" />
+	   	<field name="sz_inicial" type="text" size="10" default="12" label="LABEL_SZ_INICIAL" description="DESCRIPTION_SZ_INICIAL" />
+	   	<field name="formato" type="list" default="px" label="LABEL_SIZE_START" description="DESCRIPTION_SIZE_START">
+				<option value="ex">ex</option>
+				<option value="em">em</option>
+				<option value="px">px</option>
+				<option value="cm">cm</option>
+				<option value="mm">mm</option>
+				<option value="pc">pc</option>
+				<option value="in">in</option>
+				<option value="pt">pt</option>
+				<option value="%">%</option>
+			</field>
+			<field name="sz_minimo" type="text" size="10" default="6" label="LABEL_SZ_MINIMO" description="DESCRIPTION_SZ_MINIMO" />
+			<field name="sz_inc" type="text" size="10" default="1" label="LABEL_SZ_INC" description="DESCRIPTION_SZ_INC" />
+			<field name="leyenda011" type="spacer" class="text" label="LEYENDA011" />
+			<field name="sz_maximo" type="text" size="10" default="30" label="LABEL_SIZE_VISUAL" description="DESCRIPTION_SIZE_VISUAL" />
+			<field name="open_window_visual" type="radio" default="0" label="LABEL_WINDOW_VISUAL" description="DESCRIPTION_WINDOW_VISUAL">
+				<option value="0">NO_TXT</option>
+				<option value="1">YES_TXT</option>
+			</field>
+			<field name="leyenda02" type="spacer" class="text" label="LEYENDA02" />
+			<field name="articulos_excluidos" type="text" size="50" default="" label="LABEL_EXCLUDE_ARTICLES" description="DESCRIPTION_EXCLUDE_ARTICLES" />
+			<field name="categorias_excluidas" type="text" size="50" default="" label="LABEL_EXCLUDE_CATEGORIES" description="DESCRIPTION_EXCLUDE_CATEGORIES" />
+			<field name="leyenda03" type="spacer" class="text" label="LEYENDA03" />
+			<field name="tooltip_mas" type="text" size="50" default="Aumentar tamaño de texto" label="LABEL_TOOLTIP_MAS" description="DESCRIPTION_TOOLTIP_MAS" />
+			<field name="tooltip_menos" type="text" size="50" default="Disminuir tamaño de texto" label="LABEL_TOOLTIP_MENOS" description="DESCRIPTION_TOOLTIP_MENOS" />
+			<field name="tooltip_igual" type="text" size="50" default="Reestablecer tamaño de texto" label="LABEL_TOOLTIP_IGUAL" description="DESCRIPTION_TOOLTIP_IGUAL" />
+			<field name="tooltip_visual" type="text" size="50" default="Aumentar tamaño de texto. Discapacidad visual." label="LABEL_TOOLTIP_VISUAL" description="DESCRIPTION_TOOLTIP_VISUAL" />
+			<field name="leyenda04" type="spacer" class="text" label="LEYENDA04" />
+			<field name="include_tags" type="text" size="50" default="div,p,tr,td,table,ul,ol,li" label="LABEL_INCLUDE_TAGS" description="DESCRIPTION_INCLUDE_TAGS" />
+			<field name="leyenda05" type="spacer" class="text" label="LEYENDA05" />
+			<field name="debug_mode" type="radio" default="0" label="LABEL_DEBUG_MODE" description="DESCRIPTION_DEBUG_MODE">
+				<option value="0">NO_TXT</option>
+				<option value="1">YES_TXT</option>
+			</field>
+	</fieldset>
+	<fieldset name="STYLEAFS">
+			<field name="leyenda_S01" type="spacer" class="text" label="LEYENDA_S01" />
+			<field name="estilo" type="list" default="plg_fontarticle10" label="LABEL_ESTILO" description="DESCRIPTION_ESTILO" >
+				<option value="plg_fontarticle01">RED_BUTTON_32BITS</option>
+				<option value="plg_fontarticle02">RED_BUTTON</option>
+				<option value="plg_fontarticle03">BLUE_BUTTON</option>
+				<option value="plg_fontarticle04">BLACK_BUTTON</option>
+				<option value="plg_fontarticle05">GREEN_BUTTON</option>
+				<option value="plg_fontarticle06">SIMPLE_BUTTON</option>
+				<option value="plg_fontarticle07">RED_BUTTON_17PX</option>
+				<option value="plg_fontarticle08">BLUE_BUTTON_17PX</option>
+				<option value="plg_fontarticle09">GREY_BUTTON_18PX</option>
+				<option value="plg_fontarticle10">RED_BUTTON_20PX</option>
+				<option value="plg_fontarticle11">BLUE_BUTTON_20PX</option>
+			</field>
+			<field name="show_reset_button" type="radio" default="1" label="LABEL_SHOW_RESET_BUTTON" description="DESCRIPTION_SHOW_RESET_BUTTON">
+				<option value="0">NO_TXT</option>
+				<option value="1">YES_TXT</option>
+			</field>
+			<field name="show_visual_button" type="radio" default="0" label="LABEL_SHOW_VISUAL_BUTTON" description="DESCRIPTION_SHOW_VISUAL_BUTTON">
+				<option value="0">NO_TXT</option>
+				<option value="1">YES_TXT</option>
+			</field>
+			<field name="leyenda_S011" type="spacer" class="text" label="LEYENDA_S011" />
+			<field name="option_css_buttons" type="radio" default="0" label="LABEL_OPTION_CSS_BUTTONS" description="DESCRIPTION_OPTION_CSS_BUTTONS">
+				<option value="0">NO_TXT</option>
+				<option value="1">YES02_TXT</option>
+			</field>
+			<field name="css_buttons" type="textarea" default=".plg_fa_karmany span{float: right;}&#13;&#10;.plg_fa_karmany_titulo{margin-right: 3px;}&#13;&#10;.plg_fa_karmany_mas{margin-right: 2px;}&#13;&#10;.plg_fa_karmany_mas a{background: url(IMG_BTN01) no-repeat left top !important;height: 20px;width: 20px;display: block;text-decoration: none;}&#13;&#10;.plg_fa_karmany_mas a:hover{background: url(IMG_BTN01) no-repeat left -23px !important;}&#13;&#10;.plg_fa_karmany_mas a:active{background: url(IMG_BTN01) no-repeat left -46px !important;}&#13;&#10;.plg_fa_karmany_menos a{background: url(IMG_BTN02) no-repeat left top !important;height: 20px;width: 20px;display: block;text-decoration: none;}&#13;&#10;.plg_fa_karmany_menos a:hover{background: url(IMG_BTN02) no-repeat left -23px !important;}&#13;&#10;.plg_fa_karmany_menos a:active{background: url(IMG_BTN02) no-repeat left -46px !important;}&#13;&#10;.plg_fa_karmany_igual{margin-right: 2px;}&#13;&#10;.plg_fa_karmany_igual a{background: url(IMG_BTN03) no-repeat left top !important;height: 20px;width: 20px;display: block;text-decoration: none;}&#13;&#10;.plg_fa_karmany_igual a:hover{background: url(IMG_BTN03) no-repeat left -23px !important;}&#13;&#10;.plg_fa_karmany_igual a:active{background: url(IMG_BTN03) no-repeat left -46px !important;}&#13;&#10;.karmany_clearboth{clear: both;}&#13;&#10;.plg_fa_karmany_visual{margin: -5px 3px 0px 5px;}&#13;&#10;.plg_fa_karmany_visual a{background: url(IMG_BTN04) no-repeat left top !important;height: 30px;width: 30px;display: block;text-decoration: none;}&#13;&#10;.plg_fa_karmany_visual a:hover{background: url(IMG_BTN04) no-repeat left -33px !important;}&#13;&#10;.plg_fa_karmany_visual a:active{background: url(IMG_BTN04) no-repeat left -66px !important;}" label="LABEL_BUTTONS_TEXT" description="DESCRIPTION_BUTTONS_TEXT" rows="20" cols="60" />
+			<field name="leyenda_S02" type="spacer" class="text" label="LEYENDA_S02" />
+			<field name="option_css_title" type="radio" default="1" label="LABEL_OPTION_CSS_TITLE" description="DESCRIPTION_OPTION_CSS_TITLE">
+				<option value="0">NO_TXT</option>
+				<option value="1">YES_TXT</option>
+			</field>
+			<field name="font_style" type="textarea" default="line-height: 175%;font-size:11px;font-family:Arial;font-weight:bold;margin-right: 3px;" label="Style:" description="DESCRIPTION_FONTSTYLE" rows="6" cols="60" />
+			
+	</fieldset>
+  </fields>
+</config>
+</extension>

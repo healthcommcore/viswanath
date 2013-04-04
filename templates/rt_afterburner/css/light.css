@@ -8,7 +8,7 @@ h1,.componentheading, div.search .word label {font-size:2.7em;margin-bottom:.9em
 h2,legend {font-size:1.27em;color:#DF9200;margin-bottom:.1em;line-height:1.2em;}
 h3 {font-size:1.2em; font-family:'cabinbold';color:#446174;}
 h4 {font-size:110%;}
-article, #xmap{margin-top:5.5em; color:#000;}
+article, #xmap{margin-top:4.3em; color:#000;}
 article p{margin:0 0 1.1em 0;}
 article ul, article ol{margin:-14px 0 15px 10px;padding-left:2.2em;}
 a {color:#91360C; text-decoration:underline;}
@@ -232,9 +232,8 @@ span.attention {display:block;margin:15px 0;padding:8px 10px 8px 10px;background
 /**** HCC MODS ****/
 
 /* font assignments */
-h1{font-family:'OpenSansCondensedBold';}
-#col2 ul.menu_submenu li.active a, div.search .word label{font-family:'cabin_condensedbold';} 
-#footer ul.menu_footer li a,  #col2 ul.menu_submenu li a{font-family:'deliciousbold';}
+h1{font-family:'OpenSansCondensedBold'; line-height:1.2em;}
+#footer ul.menu_footer li a,  #col2 ul.menu_submenu li a, #col2 ul.menu_submenu li.active a, div.search .word label{font-family:'cabin_condensedbold';} 
 #xmap, #page, div.custom_menu_credit, legend{font-family:'OpenSansRegular';}
 .introtext, div.module_quote, #home_content ul li, div.custom_home_message p{font-family:'PTSansRegular';}
 div.module_quote em{font-family:'PTSansItalic';font-style:normal;}
@@ -260,14 +259,14 @@ div.custom_home_message p{margin:0;  font-size:1.5em; line-height:1.5em;}
 #home_content{margin:-5em 0 4em 5em;}
 #home_content ul li, div.custom_home_message p{color:#2A61A8;}
 #home_content ul{ margin-top:-90px;position:absolute;padding:0;}
-#colmask #home_content ul li{list-style:none; display:inline-block; text-align:center; text-transform:uppercase;position:absolute;font-size:0.95em; line-height:1.22em;}
-#colmask #home_content ul li.comm_ineq{margin:-93px 0 0 -33px;}
-#colmask #home_content ul li.risk_comm{margin:-38px 0 0 98px;}
-#colmask #home_content ul li.cbpr{margin:25px 0 0 230px;width:200px;}
-#colmask #home_content ul li.health_lit{margin:-34px 0 0 370px;width:200px;}
-#colmask #home_content ul li.health_journ{margin:-27px 0 0 580px;width:180px;}
-#colmask #home_content ul li.info_seek{margin:-150px 0 0 682px;}
-#colmask #home_content ul li.knowledge_trans{margin:-275px 0 0 630px;}
+#colmask #home_content ul li{list-style:none; display:inline-block; text-align:center; text-transform:uppercase;position:absolute;font-size:1.0em; line-height:1.22em;}
+#colmask #home_content ul li.comm_ineq{margin:-90px 0 0 -33px;}
+#colmask #home_content ul li.risk_comm{margin:-35px 0 0 98px;}
+#colmask #home_content ul li.cbpr{margin:28px 0 0 230px;width:200px;}
+#colmask #home_content ul li.health_lit{margin:-30px 0 0 370px;width:200px;}
+#colmask #home_content ul li.health_journ{margin:-25px 0 0 580px;width:180px;}
+#colmask #home_content ul li.info_seek{margin:-147px 0 0 680px;}
+#colmask #home_content ul li.knowledge_trans{margin:-272px 0 0 630px;}
 #home_bkgrd{background:url('../images/circles_lines.gif') 0 0 no-repeat;width:773px; height:489px;}
 
 /* search */
@@ -285,8 +284,7 @@ div.custom_menu_credit{float:right; margin-top:-.3em;width:33%;}
 div.custom_menu_credit li{list-style:none; padding: 0 .7em; border-left:#454545 1px solid; display:inline-block;line-height:.7em;}
 div.custom_menu_credit li:first-child{padding-left:0; border:0;}
 div.custom_menu_credit li a{font-size:.8em;}
-div.custom_menu_credit p {font-size:.7em; margin-top:.4em;clear:left;}
-div.custom_menu_credit p a {color:#D14D47;}
+div.custom_menu_credit p {font-size:.7em; margin-top:.4em;clear:left; line-height:1.6em;}
 div.custom_menu_credit ul, div.custom_menu_credit ul li, div.custom_menu_credit p{float:left;}
 
 /* quotes */
@@ -313,6 +311,9 @@ div.module_quote em{display:block;font-size:.7em; line-height:1.2em;}
 .extraspace_bot{margin-bottom:.8em;}
 div.with_photos h2{margin:1.5em 0 .4em 0;}
 div.with_photos img{float:left; margin:.3em .7em .4em 0;}
+.modifydate{font-size:.9em; font-family:'OpenSansItalic';}
+/*.plg_fa_karmany{position:absolute; top:23px; left:50%; display:block; width:200px;}*/
+.plg_fa_karmany{float:right; margin-top:-100px;}
 
 /*** FONTS ***/
 
@@ -323,6 +324,18 @@ div.with_photos img{float:left; margin:.3em .7em .4em 0;}
          url('../fonts/open-sans/OpenSans-Regular-webfont.woff') format('woff'),
          url('../fonts/open-sans/OpenSans-Regular-webfont.ttf') format('truetype'),
          url('../fonts/open-sans/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('../fonts/open-sans/OpenSans-Italic-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-Italic-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -376,6 +389,7 @@ div.with_photos img{float:left; margin:.3em .7em .4em 0;}
 
 }
 
+/*
 @font-face {
     font-family: 'tuffyregular';
     src: url('../fonts/Tuffy/tuffy-webfont.eot');
@@ -398,7 +412,7 @@ div.with_photos img{float:left; margin:.3em .7em .4em 0;}
     font-style: normal;
 
 }
-
+*/
 @font-face {
     font-family: 'tuffyitalic';
     src: url('../fonts/Tuffy/tuffy_italic-webfont.eot');
@@ -470,6 +484,7 @@ div.with_photos img{float:left; margin:.3em .7em .4em 0;}
     font-style: normal;
 
 }
+/*
 @font-face {
     font-family: 'deliciousroman';
     src: url('../fonts/delicious/delicious-roman-webfont.eot');
@@ -507,7 +522,6 @@ div.with_photos img{float:left; margin:.3em .7em .4em 0;}
 
 }
 
-/*
 @font-face {
     font-family: 'tuffybold-italic';
     src: url('../fonts/Tuffy/tuffy_bold_italic-webfont.eot');
