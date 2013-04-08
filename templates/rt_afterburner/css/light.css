@@ -139,7 +139,7 @@ a.readon2 span {background:url(../images/light.png) 0 -344px;display:block;margi
 .breadcrumbs-pad {padding:0 1px;}
 div.breadcrumbs {background:url(../images/light.png) 0 -68px repeat-x;border-bottom:1px solid #e6e6e6;font-size:110%;font-weight:bold;margin:0;padding:7px 15px 5px;color:#777;border-top:1px solid #d9d9d9;}
 div.breadcrumbs .sep {padding:0 5px;}
-.component-pad {padding:0 25px 15px 42px;float: left;}
+.component-pad {padding:0 25px 40px 42px;float: left;}
 .banneritem_text {margin-bottom:10px;}
 .inputbox{border:1px solid #ccc;padding:3px;}
 .pagination span, .pagination a {margin-right:5px;}
@@ -313,7 +313,7 @@ div.with_photos h2{margin:1.5em 0 .4em 0;}
 div.with_photos img{float:left; margin:.3em .7em .4em 0;}
 .modifydate{font-size:.9em; font-family:'OpenSansItalic';}
 /*.plg_fa_karmany{position:absolute; top:23px; left:50%; display:block; width:200px;}*/
-.plg_fa_karmany{float:right; margin-top:-100px;}
+.plg_fa_karmany{float:right; margin-top:-35px;}
 
 /*** FONTS ***/
 

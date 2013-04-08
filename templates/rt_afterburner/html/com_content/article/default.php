@@ -27,11 +27,6 @@ JHtml::addIncludePath( JPATH_COMPONENT . '/helpers' );
 <?php endif; ?>
 <?php if ((intval($this->item->modified) !=0 && $this->params->get('show_modify_date')) || ($this->params->get('show_author') && ($this->article->author != "")) || ($this->params->get('show_create_date'))) : ?>
 <p class="articleinfo">
-	<?php if (intval($this->item->modified) !=0 && $this->params->get('show_modify_date')) : ?>
-	<span class="modifydate">
-		<?php echo JText::sprintf('COM_CONTENT_LAST_UPDATED', JHTML::_('date', $this->item->modified, JText::_('DATE_FORMAT_LC1'))); ?>
-	</span>
-	<?php endif; ?>
 
 	<?php if (($this->params->get('show_author')) && ($this->article->author != "")) : ?>
 	<span class="createdby">
@@ -112,6 +107,11 @@ endif; ?>
 <div id="article_body">
 <?php echo $this->item->text; ?>
 </div>
+	<?php if (intval($this->item->modified) !=0 && $this->params->get('show_modify_date')) : ?>
+	<span class="modifydate">
+		<?php echo JText::sprintf('COM_CONTENT_LAST_UPDATED', JHTML::_('date', $this->item->modified, JText::_('DATE_FORMAT_LC1'))); ?>
+	</span>
+	<?php endif; ?>
 <?php echo $this->article->event->afterDisplayContent; ?>
 
 </article>

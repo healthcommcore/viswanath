@@ -1,3 +1,14 @@
+#header_graphic{background:url('../images/header.jpg') 0 0 no-repeat;}
+#home_content{margin:-1em 0 4em 5em;}
+#colmask #home_content ul li.comm_ineq, #colmask #home_content ul li.risk_comm, #colmask #home_content ul li.knowledge_trans, #colmask #home_content ul li.info_seek{width:150px;}
+#colmask #home_content ul li.comm_ineq{margin:-90px 0 0 -40px;}
+#colmask #home_content ul li.risk_comm{margin:-35px 0 0 90px;}
+#colmask #home_content ul li.cbpr{margin:28px 0 0 240px;width:200px;}
+#colmask #home_content ul li.health_lit{margin:-30px 0 0 375px;width:200px;}
+#colmask #home_content ul li.health_journ{margin:-25px 0 0 590px;width:180px;}
+#colmask #home_content ul li.info_seek{margin:-147px 0 0 662px;}
+#colmask #home_content ul li.knowledge_trans{margin:-272px 0 0 615px;}
+div.custom_menu_credit{width:450px; position:absolute;}
 #header .module {width: 500px;margin-left: 0;}
 #header .module ul {float: right;}
 #nav ul li li:hover, #nav ul li li.hover {position: static;}
