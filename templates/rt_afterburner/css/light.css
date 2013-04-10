@@ -4,6 +4,7 @@ table {border-collapse:collapse;border-spacing:0;}
 /* Main Layout */
 html {height:100%;margin-bottom:1px;}
 /*&h1,h2,h3,h4,.componentheading,legend {margin:2em 0 1em;}*/
+<<<<<<< HEAD
 h1,.componentheading, div.search .word label {font-size:2.3em;margin-bottom:.7em;}
 h2,legend {font-size:1.27em;color:#DF9200;margin-bottom:.1em;line-height:1.2em;}
 h3 {font-size:1.2em; font-family:'cabinbold';color:#446174;}
@@ -15,6 +16,19 @@ a {color:#D14D47;}
 a:hover {text-decoration:underline;}
 p {margin-top:10px;margin-bottom:10px;}
 #main {font-size:1.0em;line-height:140%;}
+=======
+h1,.componentheading, div.search .word label {font-size:2.7em;margin-bottom:.9em; color:#0A2056;}
+h2,legend {font-size:1.27em;color:#DF9200;margin-bottom:.1em;line-height:1.2em;}
+h3 {font-size:1.2em; font-family:'cabinbold';color:#446174;}
+h4 {font-size:110%;}
+article, #xmap{margin-top:4.3em; color:#000;}
+article p{margin:0 0 1.1em 0;}
+article ul, article ol{margin:-14px 0 15px 10px;padding-left:2.2em;}
+a {color:#91360C; text-decoration:underline;}
+a:hover {text-decoration:underline;}
+p {margin-top:10px;margin-bottom:10px;}
+#main {font-size:.95em;line-height:140%;}
+>>>>>>> redesign
 #main .foreground, #message, .leading, #page {position:relative;}
 #main-content{padding-bottom:4em;}
 #message, #showcase {z-index:0;}
@@ -54,12 +68,17 @@ p {margin-top:10px;margin-bottom:10px;}
 #nav, #footer{margin:0 auto;}
 
 /* Header */
+<<<<<<< HEAD
 #logo {width:372px;height:52px;background:url(../images/logo.gif) 0 0 no-repeat;display:block;position:absolute; top:80px; left:65px;}
+=======
+#logo {width:372px;height:52px;background:url(../images/vlab_newlogo.png) 0 0 no-repeat;display:block;position:absolute; top:80px; left:65px;}
+>>>>>>> redesign
 #header li {list-style:none;float:left;padding-left:15px;font-weight:bold;}
 #header_left{background:url('../images/header_bkgrd_left.jpg') 0 0 repeat-x; left:0;}
 #header_right{background:url('../images/header_bkgrd_right.jpg') 0 0 repeat-x;right:0;}
 .absolute{position:absolute; height:124px;width:50%;}
 #header_graphic{height:161px; background:url('../images/header.jpg')0 0 no-repeat;position:relative;}
+<<<<<<< HEAD
 #nav {height:28px;background:#D04D47;z-index:1;position:relative; width:920px; }
 #nav ul {margin:0 0 0 43px;}
 #nav li {list-style:none;float:left;margin-right:1.4em;height:28px;position:relative;}
@@ -67,15 +86,31 @@ p {margin-top:10px;margin-bottom:10px;}
 #nav li a {
 	display:block;padding:3px 23px;color:#fff;border-left:#D04D47 1px solid; border-right:#D04D47 1px solid;
 	background-color:#D04D47;
+=======
+#nav {height:28px;background:#5C84B5;z-index:1;position:relative; width:920px; }
+#nav ul {margin:0 0 0 43px;}
+#nav li {list-style:none;float:left;margin-right:1.1em;height:28px;position:relative;}
+
+#nav li a {
+	display:block;padding:3px 20px;color:#fff;
+	background-color:#5C84B5;
+>>>>>>> redesign
 	transition:background-color .2s linear 0s;
 	-moz-transition:background-color .2s linear 0s;
 	-webkit-transition:background-color .2s linear 0s;
 	-o-transition:background-color .2s linear 0s;
 }
+<<<<<<< HEAD
 #nav li a:hover{background:#A03318;}
 #nav li.active a, #nav li.active a:hover{background:#446174;}
 #nav li.active a {border-left:#fff 1px solid; border-right:#fff 1px solid;}
 #nav li a:hover, #nav li:hover a, #nav li.sfHover a {background:#A03318;color:#fff;text-decoration:none;}
+=======
+#nav li a:hover{background:#2A61A8;}
+#nav li.active a, #nav li.active a:hover{background:#2A61A8;}
+/*#nav li.active a {border-left:#fff 1px solid; border-right:#fff 1px solid;}*/
+#nav li a:hover, #nav li:hover a, #nav li.sfHover a {background:#2A61A8;color:#fff;text-decoration:none;}
+>>>>>>> redesign
 
 /*
 #nav li a {display:block;padding:3px 23px;color:#fff;
@@ -139,7 +174,11 @@ a.readon2 span {background:url(../images/light.png) 0 -344px;display:block;margi
 .breadcrumbs-pad {padding:0 1px;}
 div.breadcrumbs {background:url(../images/light.png) 0 -68px repeat-x;border-bottom:1px solid #e6e6e6;font-size:110%;font-weight:bold;margin:0;padding:7px 15px 5px;color:#777;border-top:1px solid #d9d9d9;}
 div.breadcrumbs .sep {padding:0 5px;}
+<<<<<<< HEAD
 .component-pad {padding:0 25px 15px;float: left;}
+=======
+.component-pad {padding:0 25px 40px 42px;float: left;}
+>>>>>>> redesign
 .banneritem_text {margin-bottom:10px;}
 .inputbox{border:1px solid #ccc;padding:3px;}
 .pagination span, .pagination a {margin-right:5px;}
@@ -232,16 +271,29 @@ span.attention {display:block;margin:15px 0;padding:8px 10px 8px 10px;background
 /**** HCC MODS ****/
 
 /* font assignments */
+<<<<<<< HEAD
 h1, #col2 ul.menu_submenu li.active a, div.search .word label{font-family:'delicious_heavyregular';} 
 #nav,#footer ul.menu_footer li a,  #col2 ul.menu_submenu li a{font-family:'deliciousbold';}
 #xmap, #page, div.custom_menu_credit, legend{font-family:'cabinregular';}
 .introtext, div.module_quote, #home_content ul li, div.custom_home_message p{font-family:'tuffyregular';}
 div.module_quote em{font-family:'tuffyitalic';font-style:normal;}
+=======
+h1{font-family:'OpenSansCondensedBold'; line-height:1.2em;}
+#footer ul.menu_footer li a,  #col2 ul.menu_submenu li a, #col2 ul.menu_submenu li.active a, div.search .word label{font-family:'cabin_condensedbold';} 
+#xmap, #page, div.custom_menu_credit, legend{font-family:'OpenSansRegular';}
+.introtext, div.module_quote, #home_content ul li, div.custom_home_message p{font-family:'PTSansRegular';}
+div.module_quote em{font-family:'PTSansItalic';font-style:normal;}
+#nav{font-family:'cabinbold'; text-transform:uppercase; font-size:.7em;}
+>>>>>>> redesign
 article em{font-family:'cabinitalic'; font-style:normal;}
 article strong{font-family:'cabinbold'; font-weight:normal;}
 
 /* common elements */
+<<<<<<< HEAD
 #left_col_color{position:relative; display:block; background:#EAF1F9; width:166px; padding:50000px 0; margin:-50000px 0; float:right;}
+=======
+#left_col_color{position:relative; display:block; background:#FCF3D8; width:166px; padding:50000px 0; margin:-50000px 0; float:right;}
+>>>>>>> redesign
 .custom_social_media{margin:1.2em 0 0 4em;}
 .custom_social_media a{margin:0 .3em;}
 .custom_social_media a img.fb{background:url('../images/third_party_logos.gif') 0 0 no-repeat;}
@@ -250,6 +302,7 @@ article strong{font-family:'cabinbold'; font-weight:normal;}
 .custom_social_media a:hover img.fb{background:url('../images/third_party_logos.gif') -29px 0 no-repeat;}
 .custom_social_media a:hover img.twttr{background:url('../images/third_party_logos.gif') -29px -29px no-repeat;}
 .custom_social_media a:hover img.yt{background:url('../images/third_party_logos.gif') -29px -58px no-repeat;}
+<<<<<<< HEAD
 .introtext{color:#2D3F84; font-size:1.3em; line-height:1.4em;margin-bottom:.7em;}
 
 /* home page */
@@ -266,6 +319,24 @@ div.custom_home_message p{margin:0;  font-size:1.5em; line-height:1.5em;}
 #colmask #home_content ul li.health_journ{margin:-27px 0 0 580px;width:180px;}
 #colmask #home_content ul li.info_seek{margin:-150px 0 0 682px;}
 #colmask #home_content ul li.knowledge_trans{margin:-275px 0 0 630px;}
+=======
+.introtext{color:#000; font-size:1.4em; line-height:1.3em;margin-bottom:.7em;}
+
+/* home page */
+div.custom_home_message{background:#FCF3D8; padding:2em 3em 2.5em 3em; margin-left:4em;}
+div.custom_home_message p{margin:0;  font-size:1.5em; line-height:1.5em;}
+#home_content{margin:-5em 0 4em 5em;}
+#home_content ul li, div.custom_home_message p{color:#2A61A8;}
+#home_content ul{ margin-top:-90px;position:absolute;padding:0;}
+#colmask #home_content ul li{list-style:none; display:inline-block; text-align:center; text-transform:uppercase;position:absolute;font-size:1.0em; line-height:1.22em;}
+#colmask #home_content ul li.comm_ineq{margin:-90px 0 0 -33px;}
+#colmask #home_content ul li.risk_comm{margin:-35px 0 0 98px;}
+#colmask #home_content ul li.cbpr{margin:28px 0 0 230px;width:200px;}
+#colmask #home_content ul li.health_lit{margin:-30px 0 0 370px;width:200px;}
+#colmask #home_content ul li.health_journ{margin:-25px 0 0 580px;width:180px;}
+#colmask #home_content ul li.info_seek{margin:-147px 0 0 680px;}
+#colmask #home_content ul li.knowledge_trans{margin:-272px 0 0 630px;}
+>>>>>>> redesign
 #home_bkgrd{background:url('../images/circles_lines.gif') 0 0 no-repeat;width:773px; height:489px;}
 
 /* search */
@@ -283,6 +354,7 @@ div.custom_menu_credit{float:right; margin-top:-.3em;width:33%;}
 div.custom_menu_credit li{list-style:none; padding: 0 .7em; border-left:#454545 1px solid; display:inline-block;line-height:.7em;}
 div.custom_menu_credit li:first-child{padding-left:0; border:0;}
 div.custom_menu_credit li a{font-size:.8em;}
+<<<<<<< HEAD
 div.custom_menu_credit p {font-size:.7em; margin-top:.4em;clear:left;}
 div.custom_menu_credit p a {color:#D14D47;}
 div.custom_menu_credit ul, div.custom_menu_credit ul li, div.custom_menu_credit p{float:left;}
@@ -302,6 +374,24 @@ div.module_quote .custom_quote p em{display:block;margin-top:-1em; font-size:.8e
 #col2 ul.menu_submenu li {list-style-image:none; list-style:none;margin-bottom:.5em;}
 #col2 ul.menu_submenu li a{line-height:1em;}
 #col2 ul.menu_submenu li.active a, #col2 ul.menu_submenu li a:hover{color:#A03318;}
+=======
+div.custom_menu_credit p {font-size:.7em; margin-top:.4em;clear:left; line-height:1.6em;}
+div.custom_menu_credit ul, div.custom_menu_credit ul li, div.custom_menu_credit p{float:left;}
+
+/* quotes */
+div.module_quote{color:#5E93C9;position:relative;margin:4em 0 3.1em; font-family:'PTSansNarrowRegular';font-size:1.3em; line-height:1.3em;}
+div.module_quote div{z-index:100;}
+div.module_quote div div{z-index:100;}
+div.module_quote .custom_quote{padding:.6em 1em 1em;margin-left:1.4em;position:relative;background:none; border:none;}
+div.module_quote .custom_quote p{padding-left:1em;}
+div.module_quote em{display:block;font-size:.7em; line-height:1.2em;}
+
+/* submenu */
+#col2 ul.menu_submenu{text-align:right; margin:10em 1em 3em 1.4em; }
+#col2 ul.menu_submenu li {list-style-image:none; list-style:none;margin-bottom:.7em;}
+#col2 ul.menu_submenu li a{line-height:1.2em; font-size:1.2em; }
+#col2 ul.menu_submenu li.active a, #col2 ul.menu_submenu li a:hover{color:#000;}
+>>>>>>> redesign
 
 /* sitemap */
 #xmap{margin-left:1em;}
@@ -313,31 +403,128 @@ div.module_quote .custom_quote p em{display:block;margin-top:-1em; font-size:.8e
 .extraspace_bot{margin-bottom:.8em;}
 div.with_photos h2{margin:1.5em 0 .4em 0;}
 div.with_photos img{float:left; margin:.3em .7em .4em 0;}
+<<<<<<< HEAD
+=======
+.modifydate{font-size:.9em; font-family:'OpenSansItalic';}
+/*.plg_fa_karmany{position:absolute; top:23px; left:50%; display:block; width:200px;}*/
+.plg_fa_karmany{float:right; margin-top:-35px;}
+>>>>>>> redesign
 
 /*** FONTS ***/
 
 @font-face {
+<<<<<<< HEAD
     font-family: 'tuffyregular';
     src: url('../../../../fonts/Tuffy/tuffy-webfont.eot');
     src: url('../../../../fonts/Tuffy/tuffy-webfont.eot?#iefix') format('embedded-opentype'),
          url('../../../../fonts/Tuffy/tuffy-webfont.woff') format('woff'),
          url('../../../../fonts/Tuffy/tuffy-webfont.ttf') format('truetype'),
          url('../../../../fonts/Tuffy/tuffy-webfont.svg#tuffyregular') format('svg');
+=======
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/open-sans/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('../fonts/open-sans/OpenSans-Italic-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-Italic-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansCondensedBold';
+    src: url('../fonts/open-sans-condensed/OpenSans-CondBold-webfont.eot');
+    src: url('../fonts/open-sans-condensed/OpenSans-CondBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans-condensed/OpenSans-CondBold-webfont.woff') format('woff'),
+         url('../fonts/open-sans-condensed/OpenSans-CondBold-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans-condensed/OpenSans-CondBold-webfont.svg#OpenSansCondensedBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansRegular';
+    src: url('../fonts/pt-sans/PTS55F-webfont.eot');
+    src: url('../fonts/pt-sans/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt-sans/PTS55F-webfont.woff') format('woff'),
+         url('../fonts/pt-sans/PTS55F-webfont.ttf') format('truetype'),
+         url('../fonts/pt-sans/PTS55F-webfont.svg#PTSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansNarrowRegular';
+    src: url('../fonts/pt-sans/PTN57F-webfont.eot');
+    src: url('../fonts/pt-sans/PTN57F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt-sans/PTN57F-webfont.woff') format('woff'),
+         url('../fonts/pt-sans/PTN57F-webfont.ttf') format('truetype'),
+         url('../fonts/pt-sans/PTN57F-webfont.svg#PTSansNarraoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansItalic';
+    src: url('../fonts/pt-sans/PTS56F-webfont.eot');
+    src: url('../fonts/pt-sans/PTS56F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt-sans/PTS56F-webfont.woff') format('woff'),
+         url('../fonts/pt-sans/PTS56F-webfont.ttf') format('truetype'),
+         url('../fonts/pt-sans/PTS56F-webfont.svg#PTSansItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+@font-face {
+    font-family: 'tuffyregular';
+    src: url('../fonts/Tuffy/tuffy-webfont.eot');
+    src: url('../fonts/Tuffy/tuffy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Tuffy/tuffy-webfont.woff') format('woff'),
+         url('../fonts/Tuffy/tuffy-webfont.ttf') format('truetype'),
+         url('../fonts/Tuffy/tuffy-webfont.svg#tuffyregular') format('svg');
+>>>>>>> redesign
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'tuffybold';
+<<<<<<< HEAD
     src: url('../../../../fonts/Tuffy/tuffy_bold-webfont.eot');
     src: url('../../../../fonts/Tuffy/tuffy_bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../../../../fonts/Tuffy/tuffy_bold-webfont.woff') format('woff'),
          url('../../../../fonts/Tuffy/tuffy_bold-webfont.ttf') format('truetype'),
          url('../../../../fonts/Tuffy/tuffy_bold-webfont.svg#tuffybold') format('svg');
+=======
+    src: url('../fonts/Tuffy/tuffy_bold-webfont.eot');
+    src: url('../fonts/Tuffy/tuffy_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Tuffy/tuffy_bold-webfont.woff') format('woff'),
+         url('../fonts/Tuffy/tuffy_bold-webfont.ttf') format('truetype'),
+         url('../fonts/Tuffy/tuffy_bold-webfont.svg#tuffybold') format('svg');
+>>>>>>> redesign
     font-weight: normal;
     font-style: normal;
 
 }
+<<<<<<< HEAD
 
 @font-face {
     font-family: 'tuffyitalic';
@@ -346,11 +533,22 @@ div.with_photos img{float:left; margin:.3em .7em .4em 0;}
          url('../../../../fonts/Tuffy/tuffy_italic-webfont.woff') format('woff'),
          url('../../../../fonts/Tuffy/tuffy_italic-webfont.ttf') format('truetype'),
          url('../../../../fonts/Tuffy/tuffy_italic-webfont.svg#tuffyitalic') format('svg');
+=======
+*/
+@font-face {
+    font-family: 'tuffyitalic';
+    src: url('../fonts/Tuffy/tuffy_italic-webfont.eot');
+    src: url('../fonts/Tuffy/tuffy_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Tuffy/tuffy_italic-webfont.woff') format('woff'),
+         url('../fonts/Tuffy/tuffy_italic-webfont.ttf') format('truetype'),
+         url('../fonts/Tuffy/tuffy_italic-webfont.svg#tuffyitalic') format('svg');
+>>>>>>> redesign
     font-weight: normal;
     font-style: normal;
 
 }
 
+<<<<<<< HEAD
 
 @font-face {
     font-family: 'cabinbold';
@@ -359,6 +557,39 @@ div.with_photos img{float:left; margin:.3em .7em .4em 0;}
          url('../../../../fonts/cabin/cabin-bold-webfont.woff') format('woff'),
          url('../../../../fonts/cabin/cabin-bold-webfont.ttf') format('truetype'),
          url('../../../../fonts/cabin/cabin-bold-webfont.svg#cabinbold') format('svg');
+=======
+@font-face {
+    font-family: 'cabin_condensedregular';
+    src: url('../fonts/cabincondensed/cabincondensed-regular-webfont.eot');
+    src: url('../fonts/cabincondensed/cabincondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabincondensed/cabincondensed-regular-webfont.woff') format('woff'),
+         url('../fonts/cabincondensed/cabincondensed-regular-webfont.ttf') format('truetype'),
+         url('../fonts/cabincondensed/cabincondensed-regular-webfont.svg#cabin_condensedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabin_condensedbold';
+    src: url('../fonts/cabincondensed/cabincondensed-bold-webfont.eot');
+    src: url('../fonts/cabincondensed/cabincondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabincondensed/cabincondensed-bold-webfont.woff') format('woff'),
+         url('../fonts/cabincondensed/cabincondensed-bold-webfont.ttf') format('truetype'),
+         url('../fonts/cabincondensed/cabincondensed-bold-webfont.svg#cabin_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabinbold';
+    src: url('../fonts/cabin/cabin-bold-webfont.eot');
+    src: url('../fonts/cabin/cabin-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin/cabin-bold-webfont.woff') format('woff'),
+         url('../fonts/cabin/cabin-bold-webfont.ttf') format('truetype'),
+         url('../fonts/cabin/cabin-bold-webfont.svg#cabinbold') format('svg');
+>>>>>>> redesign
     font-weight: normal;
     font-style: normal;
 
@@ -366,11 +597,19 @@ div.with_photos img{float:left; margin:.3em .7em .4em 0;}
 
 @font-face {
     font-family: 'cabinregular';
+<<<<<<< HEAD
     src: url('../../../../fonts/cabin/cabin-regular-webfont.eot');
     src: url('../../../../fonts/cabin/cabin-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('../../../../fonts/cabin/cabin-regular-webfont.woff') format('woff'),
          url('../../../../fonts/cabin/cabin-regular-webfont.ttf') format('truetype'),
          url('../../../../fonts/cabin/cabin-regular-webfont.svg#cabinregular') format('svg');
+=======
+    src: url('../fonts/cabin/cabin-regular-webfont.eot');
+    src: url('../fonts/cabin/cabin-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin/cabin-regular-webfont.woff') format('woff'),
+         url('../fonts/cabin/cabin-regular-webfont.ttf') format('truetype'),
+         url('../fonts/cabin/cabin-regular-webfont.svg#cabinregular') format('svg');
+>>>>>>> redesign
     font-weight: normal;
     font-style: normal;
 
@@ -378,15 +617,24 @@ div.with_photos img{float:left; margin:.3em .7em .4em 0;}
 
 @font-face {
     font-family: 'cabinitalic';
+<<<<<<< HEAD
     src: url('../../../../fonts/cabin/cabin-italic-webfont.eot');
     src: url('../../../../fonts/cabin/cabin-italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('../../../../fonts/cabin/cabin-italic-webfont.woff') format('woff'),
          url('../../../../fonts/cabin/cabin-italic-webfont.ttf') format('truetype'),
          url('../../../../fonts/cabin/cabin-italic-webfont.svg#cabinitalic') format('svg');
+=======
+    src: url('../fonts/cabin/cabin-italic-webfont.eot');
+    src: url('../fonts/cabin/cabin-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cabin/cabin-italic-webfont.woff') format('woff'),
+         url('../fonts/cabin/cabin-italic-webfont.ttf') format('truetype'),
+         url('../fonts/cabin/cabin-italic-webfont.svg#cabinitalic') format('svg');
+>>>>>>> redesign
     font-weight: normal;
     font-style: normal;
 
 }
+<<<<<<< HEAD
 @font-face {
     font-family: 'deliciousroman';
     src: url('../../../../fonts/delicious/delicious-roman-webfont.eot');
@@ -394,6 +642,16 @@ div.with_photos img{float:left; margin:.3em .7em .4em 0;}
          url('../../../../fonts/delicious/delicious-roman-webfont.woff') format('woff'),
          url('../../../../fonts/delicious/delicious-roman-webfont.ttf') format('truetype'),
          url('../../../../fonts/delicious/delicious-roman-webfont.svg#deliciousroman') format('svg');
+=======
+/*
+@font-face {
+    font-family: 'deliciousroman';
+    src: url('../fonts/delicious/delicious-roman-webfont.eot');
+    src: url('../fonts/delicious/delicious-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/delicious/delicious-roman-webfont.woff') format('woff'),
+         url('../fonts/delicious/delicious-roman-webfont.ttf') format('truetype'),
+         url('../fonts/delicious/delicious-roman-webfont.svg#deliciousroman') format('svg');
+>>>>>>> redesign
     font-weight: normal;
     font-style: normal;
 
@@ -402,11 +660,19 @@ div.with_photos img{float:left; margin:.3em .7em .4em 0;}
 
  @font-face {
     font-family: 'deliciousbold';
+<<<<<<< HEAD
     src: url('../../../../fonts/delicious/delicious-bold-webfont.eot');
     src: url('../../../../fonts/delicious/delicious-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../../../../fonts/delicious/delicious-bold-webfont.woff') format('woff'),
          url('../../../../fonts/delicious/delicious-bold-webfont.ttf') format('truetype'),
          url('../../../../fonts/delicious/delicious-bold-webfont.svg#deliciousbold') format('svg');
+=======
+    src: url('../fonts/delicious/delicious-bold-webfont.eot');
+    src: url('../fonts/delicious/delicious-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/delicious/delicious-bold-webfont.woff') format('woff'),
+         url('../fonts/delicious/delicious-bold-webfont.ttf') format('truetype'),
+         url('../fonts/delicious/delicious-bold-webfont.svg#deliciousbold') format('svg');
+>>>>>>> redesign
     font-weight: normal;
     font-style: normal;
 
@@ -414,16 +680,25 @@ div.with_photos img{float:left; margin:.3em .7em .4em 0;}
 
 @font-face {
     font-family: 'delicious_heavyregular';
+<<<<<<< HEAD
     src: url('../../../../fonts/delicious/delicious-heavy-webfont.eot');
     src: url('../../../../fonts/delicious/delicious-heavy-webfont.eot?#iefix') format('embedded-opentype'),
          url('../../../../fonts/delicious/delicious-heavy-webfont.woff') format('woff'),
          url('../../../../fonts/delicious/delicious-heavy-webfont.ttf') format('truetype'),
          url('../../../../fonts/delicious/delicious-heavy-webfont.svg#delicious_heavyregular') format('svg');
+=======
+    src: url('../fonts/delicious/delicious-heavy-webfont.eot');
+    src: url('../fonts/delicious/delicious-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/delicious/delicious-heavy-webfont.woff') format('woff'),
+         url('../fonts/delicious/delicious-heavy-webfont.ttf') format('truetype'),
+         url('../fonts/delicious/delicious-heavy-webfont.svg#delicious_heavyregular') format('svg');
+>>>>>>> redesign
     font-weight: normal;
     font-style: normal;
 
 }
 
+<<<<<<< HEAD
 /*
 @font-face {
     font-family: 'tuffybold-italic';
@@ -432,6 +707,15 @@ div.with_photos img{float:left; margin:.3em .7em .4em 0;}
          url('../../../../fonts/Tuffy/tuffy_bold_italic-webfont.woff') format('woff'),
          url('../../../../fonts/Tuffy/tuffy_bold_italic-webfont.ttf') format('truetype'),
          url('../../../../fonts/Tuffy/tuffy_bold_italic-webfont.svg#tuffybold-italic') format('svg');
+=======
+@font-face {
+    font-family: 'tuffybold-italic';
+    src: url('../fonts/Tuffy/tuffy_bold_italic-webfont.eot');
+    src: url('../fonts/Tuffy/tuffy_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Tuffy/tuffy_bold_italic-webfont.woff') format('woff'),
+         url('../fonts/Tuffy/tuffy_bold_italic-webfont.ttf') format('truetype'),
+         url('../fonts/Tuffy/tuffy_bold_italic-webfont.svg#tuffybold-italic') format('svg');
+>>>>>>> redesign
     font-weight: normal;
     font-style: normal;
 

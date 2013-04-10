@@ -25,6 +25,7 @@ JHtml::addIncludePath( JPATH_COMPONENT . '/helpers' );
     </h1>
 </div>
 <?php endif; ?>
+<<<<<<< HEAD
 
 <?php if ((intval($this->article->modified) !=0 && $this->params->get('show_modify_date')) || ($this->params->get('show_author') && ($this->article->author != "")) || ($this->params->get('show_create_date'))) : ?>
 <p class="articleinfo">
@@ -33,6 +34,10 @@ JHtml::addIncludePath( JPATH_COMPONENT . '/helpers' );
 		<?php echo JText::sprintf('LAST_UPDATED2', JHTML::_('date', $this->article->modified, JText::_('DATE_FORMAT_LC2'))); ?>
 	</span>
 	<?php endif; ?>
+=======
+<?php if ((intval($this->item->modified) !=0 && $this->params->get('show_modify_date')) || ($this->params->get('show_author') && ($this->article->author != "")) || ($this->params->get('show_create_date'))) : ?>
+<p class="articleinfo">
+>>>>>>> redesign
 
 	<?php if (($this->params->get('show_author')) && ($this->article->author != "")) : ?>
 	<span class="createdby">
@@ -42,7 +47,11 @@ JHtml::addIncludePath( JPATH_COMPONENT . '/helpers' );
 
 	<?php if ($this->params->get('show_create_date')) : ?>
 	<span class="createdate">
+<<<<<<< HEAD
 		<?php echo JHTML::_('date', $this->article->created, JText::_('DATE_FORMAT_LC2')); ?>
+=======
+		<?php echo JHTML::_('date', $this->article->created, JText::_('DATE_FORMAT_LC1')); ?>
+>>>>>>> redesign
 	</span>
 	<?php endif; ?>
 </p>
@@ -113,6 +122,14 @@ endif; ?>
 <div id="article_body">
 <?php echo $this->item->text; ?>
 </div>
+<<<<<<< HEAD
+=======
+	<?php if (intval($this->item->modified) !=0 && $this->params->get('show_modify_date')) : ?>
+	<span class="modifydate">
+		<?php echo JText::sprintf('COM_CONTENT_LAST_UPDATED', JHTML::_('date', $this->item->modified, JText::_('DATE_FORMAT_LC1'))); ?>
+	</span>
+	<?php endif; ?>
+>>>>>>> redesign
 <?php echo $this->article->event->afterDisplayContent; ?>
 
 </article>

@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 .moduletable_search, #header_left, #header_right, #nav, #col2, #col3{display:none;}
 #header_graphic{background:#fff;}
 #body article #page{font-family:Verdana;}
 article{width:960px;}
 .s-c-s #col1pad{margin-left:200px;width:100%}
 #main{margin-top:-170px;}
+=======
+body, #page, #main{font-family:Times, serif; font-weight:normal; font-size:14pt;}
+h1, h2, h3, h4, h5, h1.contentheading, h1.componentheading, h2.contentheading, h2.componentheading, #footer ul.menu_footer li a, #col2 ul.menu_submenu li a, #col2 ul.menu_submenu li.active a {font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+.module_quote, #col2 ul.menu_submenu{font-family:Arial, Helvetica, sans-serif; font-weight:normal;}
+.s-c-s #col3, .moduletable_search, #header_left, #header_right, #header_graphic, #nav{display:none;}
+.s-c-s #colright{left:58%; width:122%;}
+.moduletable_search
+>>>>>>> redesign

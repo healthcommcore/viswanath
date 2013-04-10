@@ -11,7 +11,6 @@ body#ff-default .mininews .lead-articles h4, body#ff-default table.blog td.conte
 body#ff-optima, #ff-optima td {font-family: Optima, Lucida, 'MgOpen Cosmetica', 'Lucida Sans Unicode', sans-serif;}
 body#ff-geneva, #ff-geneva td {font-family:  Geneva, Tahoma, "Nimbus Sans L", sans-serif;}
 body#ff-helvetica, #ff-helvetica td {font-family: Helvetica, Arial, FreeSans, sans-serif;}
-body#ff-verdana, #ff-verdana td {font-family: Verdana, Arial, FreeSans, sans-serif;}
 body#ff-lucida, #ff-lucida td {font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Lucida, sans-serif;}
 body#ff-georgia, #ff-georgia td {font-family: Georgia, sans-serif;}
 body#ff-trebuchet, #ff-trebuchet td {font-family: "Trebuchet MS", sans-serif;}
@@ -41,7 +40,7 @@ a:hover {text-decoration: underline;}
 div.mosimage_caption {font-size: 95%;}
 .componentheading { /* color:#333; */font-size: 160%;line-height: 120%;font-weight: bold;padding: 0 0 0 0px;margin: 0 0 20px 0;
 /* border-bottom: 5px solid #f7f7f7;*/ }
-.contentheading {font-size: 150%;font-weight: bold;line-height: 120%;padding: 0 0 8px 0;border: 0;}
+.contentheading {font-size: 160%;font-weight: bold;line-height: 120%;padding: 0 0 15px 0;border: 0;}
 span.small, td.createdate, td.modifydate {text-transform: uppercase;color: #666;font-size: 80%;}
 table.blog td.createdate {padding-bottom: 5px;}
 table.blog td.modifydate {padding-top: 10px;}
@@ -701,7 +700,7 @@ ul#horiznav.menutop, #horiz-menu ul.menutop {
 
 /* TL 35 px for bottom banner, rest for links */
 #bottom-menu {
-	height: 30px;
+	height: 80px;
 }
 
 #bottom-menu ul#mainlevel-bottom {
