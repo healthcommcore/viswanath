@@ -312,7 +312,7 @@ div.module_quote em{display:block;font-size:.7em; line-height:1.2em;}
 .extraspace_bot{margin-bottom:.8em;}
 div.with_photos h2{margin:1.5em 0 .4em 0;}
 div.with_photos img{float:left; margin:.3em .7em .4em 0;}
-.modifydate{font-size:.9em; font-family:'OpenSansItalic';}
+.modifydate{font-size:.8em; font-family:'OpenSansItalic'; color:#999;}
 /*.plg_fa_karmany{position:absolute; top:23px; left:50%; display:block; width:200px;}*/
 .plg_fa_karmany{float:right; margin-top:-35px;}
 

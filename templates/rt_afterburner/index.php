@@ -37,6 +37,17 @@ $is_home = JRequest::getVar('Itemid') == 101;
 <!--[if lte IE 7]>
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/rt_afterburner/css/styles.ie7.css" type="text/css" />
 <![endif]-->
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11023926-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://s</script>
 </head>
 <body>
 <div id="header_left" class="absolute"></div>
