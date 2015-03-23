@@ -219,9 +219,9 @@ span.attention {display:block;margin:15px 0;padding:8px 10px 8px 10px;background
 #footer .custom_credit{float:right; margin-top:-8px;}
 #footer .custom_logos{float:left;}
 #footer .custom_logos a{margin-right:1.0em;}
-#footer .custom_logos img.hsph{background:url('../images/third_party_logos.gif') -60px 0 no-repeat;}
-#footer .custom_logos img.dfci{background:url('../images/third_party_logos.gif') -62px -28px no-repeat;}
-#footer .custom_logos img.dfhcc{background:url('../images/third_party_logos.gif') -60px -57px no-repeat;}
+#footer .custom_logos img.hsph{background:url('../images/third_party_logos_v2.png') -60px 0 no-repeat;}
+#footer .custom_logos img.dfci{background:url('../images/third_party_logos_v2.png') -62px -28px no-repeat;}
+#footer .custom_logos img.dfhcc{background:url('../images/third_party_logos_v2.png') -60px -57px no-repeat;}
 /* Mailto Page */
 #rt-component .rt-block {width: 378px;}
 #rt-component .mailto-close {background: url(../images/icons/icon-delete.png) 0 0 no-repeat;}
